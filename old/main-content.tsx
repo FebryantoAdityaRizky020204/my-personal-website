@@ -30,7 +30,7 @@ export default function MainContent() {
       {/* Teks "NOT YET" di Tengah Layar */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
         <p className="text-6xl font-bold font-mono text-zinc-400 dark:text-zinc-700 opacity-[0.37] tracking-wider">
-          NOT YET
+          WAIT
         </p>
       </div>
     </div>
