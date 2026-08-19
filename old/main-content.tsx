@@ -23,7 +23,7 @@ export default function MainContent() {
 
   // useEffect kedua: Khusus untuk mengecek perubahan nilai num
   useEffect(() => {
-    if (num === 0) {
+    if (num === -1) {
       // Pindah ke link eksternal di client-side menggunakan window.location.href
       window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }
@@ -31,7 +31,7 @@ export default function MainContent() {
 
   // Fungsi dipindah ke luar agar bisa dibaca oleh onClick
   const stopCount = () => {
-    if (timerRef.current !== null) {
+    if (timerRef.current !== null && num > 0) {
       clearInterval(timerRef.current);
     }
   };
@@ -56,7 +56,6 @@ export default function MainContent() {
               <ArrowRight className="w-4 h-4" />
             </Link>
           </p>
-          <Link href="/adit">Adit</Link>
         </div>
       </div>
 
@@ -64,8 +63,9 @@ export default function MainContent() {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
         onClick={stopCount}
       >
-        <p className="text-6xl font-bold font-mono text-zinc-400 dark:text-zinc-700 opacity-[0.37] tracking-wider">
-          WAIT {num <= 2 && "CLICK ME 😅 "} {num == 0 && "SORRY"} {num}
+        <p className="text-6xl text-center font-bold font-mono text-zinc-400 dark:text-zinc-700 opacity-[0.37] tracking-wider">
+          WAIT {num <= 2 && "CLICK ME 😅 "} {num == 0 && "SORRY"}{" "}
+          {num > 0 && num}
         </p>
       </div>
     </div>
