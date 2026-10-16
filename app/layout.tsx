@@ -1,29 +1,37 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/ui/footer";
+import Navbar from "@/components/ui/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Profile | Aditya Rizky Febryanto",
-  description: "Aditya Rizky Febryanto",
+  title: "Logsfolio | Developer Portfolio",
+  description:
+    "A clean looking FREE portfolio template for devs. Built with NextJS & TailwindCSS",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body
+        className={`${inter.className} bg-[#a229ff] dark:bg-gray-950 grid grid-rows-[auto_1fr_auto] min-h-screen overscroll-none relative`}
+        style={{
+          backgroundImage: "url('/assets/svg/circuit-board.svg')",
+          // backgroundRepeat: "no-repeat",
+          // backgroundPosition: "bottom",
+          // backgroundSize: "120%",
+        }}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
