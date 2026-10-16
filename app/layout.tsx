@@ -7,9 +7,31 @@ import Navbar from "@/components/ui/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Logsfolio | Developer Portfolio",
+  title: "Aditya Rizky Febryanto | Personal Portfolio",
   description:
-    "A clean looking FREE portfolio template for devs. Built with NextJS & TailwindCSS",
+    "Official portfolio of Aditya Rizky Febryanto. Discover my projects, skills, experience, and work as a Fresh Graduate Informatics Engineering",
+
+  applicationName: "Aditya Rizky Febryanto Portfolio",
+
+  authors: [
+    {
+      name: "Aditya Rizky Febryanto",
+    },
+  ],
+
+  openGraph: {
+    title: "Aditya Rizky Febryanto | Personal Portfolio",
+    description:
+      "Explore the projects, skills, and experience of Aditya Rizky Febryanto.",
+    type: "website",
+    url: "https://adityarizkyf.netlify.app",
+    siteName: "Aditya Rizky Febryanto Portfolio",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
