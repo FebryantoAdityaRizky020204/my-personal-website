@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#a229ff] dark:bg-gray-950 grid grid-rows-[auto_1fr_auto] min-h-screen overscroll-none relative`}
+        className={`${inter.className} bg-[#00317ad7] dark:bg-gray-950 grid grid-rows-[auto_1fr_auto] min-h-screen  relative`}
         style={{
           backgroundImage: "url('/assets/svg/circuit-board.svg')",
           // backgroundRepeat: "no-repeat",
