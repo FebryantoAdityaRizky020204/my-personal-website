@@ -20,7 +20,7 @@ const Hello = async () => {
         className="container bg-[#ffffff6b] border border-white/20 shadow-lg dark:bg-[#00284da8] mx-auto rounded-lg overflow-hidden"
       >
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
-          <div className="mx-auto relative rounded-b-full overflow-hidden md:overflow-visible bg-[#004ddb] dark:bg-amber-300 w-95">
+          <div className="mx-auto relative rounded-b-full overflow-hidden md:overflow-visible bg-[#004ddb] dark:bg-amber-300 w-full md:w-95">
             <Image
               src="/assets/me-1.png"
               alt="Developer"
@@ -48,7 +48,7 @@ const Hello = async () => {
             <p className="text-center px-2 md:px-0 md:text-start lg:text-md text-gray-800 dark:text-gray-400">
               {data.personalInfo.bio}
             </p>
-            <div className="space-x-4">
+            <div className="space-x-6 p-3 md:p-1">
               <Link
                 href={data.contactInfo.github}
                 prefetch={false}
