@@ -1,11 +1,2 @@
-ignoredBuiltDependencies:
-  - sharp
-  - unrs-resolver
-
-overrides:
-  electron-to-chromium: "1.5.400"
-
-minimumReleaseAge: 0
-
 allowBuilds:
   unrs-resolver: true

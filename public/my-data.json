@@ -1,0 +1,239 @@
+{
+  "name": "Adit",
+  "role": "Mahasiswa S1 [Jurusan Anda]",
+  "headline": "Saya membangun solusi yang rapi, berguna, dan mudah dipakai.",
+  "rotatingRoles": [
+    "machine learning",
+    "pengembangan web",
+    "riset dan eksperimen"
+  ],
+  "about": "Mahasiswa tingkat akhir yang tertarik pada machine learning dan pengembangan web. Saya senang mengubah masalah nyata menjadi produk yang bekerja, dari riset awal sampai tampil di layar. Saat ini saya mencari kesempatan magang dan kolaborasi proyek.",
+  "photo": "rasio 4:5",
+  "photo2": "rasio 4:3",
+  "cv": "",
+  "availability": "Terbuka untuk magang dan kolaborasi",
+  "location": "Kota, Provinsi",
+  "contact": {
+    "email": "email@contoh.com",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username"
+  },
+
+  "stats": [
+    { "value": 3.75, "decimals": 2, "label": "IPK sementara" },
+    { "value": 8, "suffix": "+", "label": "Bulan pengalaman kerja" },
+    { "value": 5, "suffix": "+", "label": "Proyek selesai" },
+    { "value": 3, "label": "Sertifikasi" }
+  ],
+
+  "bio": [
+    "Ketertarikan saya pada teknologi dimulai dari rasa penasaran: bagaimana sebuah komputer bisa mengenali sesuatu dari gambar? Rasa penasaran itu membawa saya ke dunia deep learning dan, belakangan, ke pengembangan aplikasi yang membuat hasil riset bisa dipakai orang lain.",
+    "Saya terbiasa bekerja dengan data nyata yang berantakan, membandingkan beberapa pendekatan secara adil, lalu menyampaikan hasilnya dengan jelas. Di luar kelas, saya aktif di organisasi dan belajar lewat proyek pribadi.",
+    "Saya mencari tim yang suka bereksperimen, terbuka pada umpan balik, dan mau berbagi ilmu."
+  ],
+  "quickFacts": [
+    { "label": "Lokasi", "value": "Kota, Provinsi" },
+    { "label": "Status", "value": "Mahasiswa tingkat akhir" },
+    { "label": "Fokus", "value": "Computer vision, aplikasi web" },
+    { "label": "Bahasa", "value": "Indonesia, Inggris" },
+    {
+      "label": "Ketersediaan",
+      "value": "Magang penuh waktu mulai [bulan/tahun]"
+    }
+  ],
+  "interests": [
+    "Membaca paper AI",
+    "Fotografi",
+    "Gim strategi",
+    "Lari pagi",
+    "Kopi"
+  ],
+  "now": [
+    "Menyelesaikan skripsi tentang klasifikasi lesi kulit",
+    "Mendalami arsitektur Vision Mamba",
+    "Mencari magang di bidang ML atau web"
+  ],
+
+  "education": [
+    {
+      "period": "2021 sampai sekarang",
+      "school": "Nama Universitas",
+      "degree": "S1 [Nama Program Studi]",
+      "detail": "IPK 3,75 / 4,00. Sedang menyusun skripsi. Aktif di [organisasi/komunitas].",
+      "courses": [
+        "Machine Learning",
+        "Visi Komputer",
+        "Basis Data",
+        "Struktur Data",
+        "Statistika"
+      ]
+    },
+    {
+      "period": "2018 sampai 2021",
+      "school": "Nama SMA / SMK",
+      "degree": "Jurusan IPA / [Jurusan]",
+      "detail": "Lulus dengan [prestasi atau kegiatan yang ingin ditonjolkan].",
+      "courses": []
+    }
+  ],
+  "thesis": {
+    "title": "Perbandingan EfficientNet-B0, Vision Mamba, dan Model Hibrida untuk Klasifikasi Lesi Kulit",
+    "desc": "Penelitian yang membandingkan tiga arsitektur deep learning pada dataset HAM10000, dengan sistem dua tahap: penyaring citra kulit atau bukan kulit, lalu klasifikasi tujuh kelas lesi.",
+    "tags": ["HAM10000", "EfficientNet-B0", "Vision Mamba", "Streamlit"],
+    "advisor": "Pembimbing: [Nama Dosen]"
+  },
+
+  "experience": [
+    {
+      "period": "Jun 2025 sampai Agu 2025",
+      "company": "Nama Perusahaan",
+      "title": "Magang [Posisi]",
+      "type": "Magang",
+      "points": [
+        "Mengerjakan [fitur/tugas utama] yang dipakai oleh [jumlah/jenis pengguna].",
+        "Berkolaborasi dengan tim [tim] untuk [hasil yang dicapai].",
+        "Meningkatkan [metrik] sebesar [angka]% melalui [tindakan]."
+      ],
+      "stack": ["React", "Node.js", "PostgreSQL"]
+    },
+    {
+      "period": "2023 sampai 2024",
+      "company": "Nama Organisasi / Lab / Klien",
+      "title": "[Posisi atau Peran]",
+      "type": "Freelance",
+      "points": [
+        "Bertanggung jawab atas [lingkup pekerjaan].",
+        "Menyelesaikan [proyek/hasil] tepat waktu."
+      ],
+      "stack": ["Python", "Pandas"]
+    }
+  ],
+
+  "technical": [
+    { "name": "Python", "level": 4 },
+    { "name": "PyTorch dan deep learning", "level": 4 },
+    { "name": "React dan Tailwind CSS", "level": 3 },
+    { "name": "SQL dan analisis data", "level": 3 },
+    { "name": "Git dan kolaborasi tim", "level": 4 },
+    { "name": "Docker dan deployment", "level": 2 }
+  ],
+  "soft": [
+    "Komunikasi",
+    "Kerja tim",
+    "Manajemen waktu",
+    "Berpikir analitis",
+    "Presentasi"
+  ],
+  "languages": [
+    { "name": "Bahasa Indonesia", "level": "Penutur asli" },
+    { "name": "Bahasa Inggris", "level": "Profesional, TOEFL ITP 5xx" }
+  ],
+  "tools": [
+    "Python",
+    "PyTorch",
+    "TensorFlow",
+    "Streamlit",
+    "React",
+    "Tailwind CSS",
+    "Node.js",
+    "Git",
+    "Docker",
+    "Kaggle",
+    "Figma",
+    "SQL",
+    "Pandas",
+    "scikit-learn",
+    "Linux"
+  ],
+
+  "categories": ["Semua", "AI/ML", "Web", "Data"],
+  "projects": [
+    {
+      "title": "Sistem Klasifikasi Penyakit Kulit Dua Tahap",
+      "category": "AI/ML",
+      "featured": true,
+      "desc": "Membandingkan EfficientNet-B0, Vision Mamba, dan model hibrida keduanya pada dataset HAM10000. Sistem bekerja dua tahap: model penyaring memastikan gambar adalah kulit, lalu model klasifikasi menentukan satu dari tujuh jenis lesi. Hasilnya dipakai lewat aplikasi Streamlit.",
+      "metrics": [
+        "3 arsitektur dibandingkan",
+        "7 kelas lesi",
+        "5 seed acak untuk validasi"
+      ],
+      "tags": ["Python", "PyTorch", "Computer Vision", "Streamlit"],
+      "image": "",
+      "demo": "",
+      "repo": "https://github.com/username/proyek-1"
+    },
+    {
+      "title": "Nama Proyek Web",
+      "category": "Web",
+      "desc": "Satu atau dua kalimat tentang masalah yang diselesaikan, peran Anda, dan hasilnya.",
+      "tags": ["React", "Tailwind CSS", "Node.js"],
+      "image": "",
+      "demo": "https://contoh.com",
+      "repo": "https://github.com/username/proyek-2"
+    },
+    {
+      "title": "Dashboard Analisis Data",
+      "category": "Data",
+      "desc": "Satu atau dua kalimat tentang data yang dianalisis dan wawasan yang dihasilkan.",
+      "tags": ["Python", "SQL", "Dashboard"],
+      "image": "",
+      "demo": "",
+      "repo": "https://github.com/username/proyek-3"
+    },
+    {
+      "title": "Nama Proyek Web Kedua",
+      "category": "Web",
+      "desc": "Satu atau dua kalimat tentang masalah yang diselesaikan, peran Anda, dan hasilnya.",
+      "tags": ["React", "REST API"],
+      "image": "",
+      "demo": "https://contoh.com",
+      "repo": "https://github.com/username/proyek-4"
+    }
+  ],
+
+  "achievements": [
+    {
+      "title": "Juara 2 Lomba [Nama Lomba]",
+      "meta": "Penyelenggara, 2024",
+      "desc": "Satu kalimat tentang karya atau pencapaian Anda."
+    },
+    {
+      "title": "Penerima Beasiswa [Nama]",
+      "meta": "Pemberi beasiswa, 2022",
+      "desc": "Satu kalimat tentang kriteria atau jumlah penerima."
+    }
+  ],
+  "certifications": [
+    { "title": "Machine Learning Specialization", "meta": "Coursera, 2024" },
+    {
+      "title": "Deep Learning with PyTorch",
+      "meta": "Nama Penyelenggara, 2024"
+    },
+    { "title": "Responsive Web Design", "meta": "freeCodeCamp, 2023" }
+  ],
+  "organizations": [
+    {
+      "title": "Anggota Divisi Riset",
+      "meta": "Himpunan Mahasiswa [Jurusan], 2022 sampai 2023"
+    },
+    {
+      "title": "Asisten Praktikum [Mata Kuliah]",
+      "meta": "Laboratorium [Nama], 2023"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Cepat belajar, teliti, dan selalu menjelaskan hasil kerjanya dengan jelas.",
+      "name": "Nama Pembimbing",
+      "role": "Dosen pembimbing, Nama Universitas",
+      "avatar": ""
+    },
+    {
+      "quote": "Kontribusinya nyata di tim: tepat waktu dan mau membantu anggota lain.",
+      "name": "Nama Mentor",
+      "role": "Mentor magang, Nama Perusahaan",
+      "avatar": ""
+    }
+  ]
+}

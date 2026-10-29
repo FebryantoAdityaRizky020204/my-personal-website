@@ -10,8 +10,10 @@ export default async function Navbar() {
   const data = await getJSONData();
 
   return (
-    <header className="fixed top-5 left-5 z-50 w-fit shadow-s">
-      <div className="container max-w-5xl mx-auto rounded-md flex items-center gap-2 justify-between py-2 px-4 md:px-6 bg-[#c2c2c250] shadow-sm/50 shadow-[#ffffff] dark:bg-[#3a3a3a50] dark:shadow-sm/50 dark:shadow-white">
+    // <header className="fixed top-50 left-5 z-50 w-fit shadow-s">
+    // <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-fit shadow-sm">
+    <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-fit shadow-sm">
+      <div className="container max-w-5xl mx-auto rounded-md flex items-center gap-2 justify-between py-2 px-4 md:px-6 bg-[var(--bg-navbar)] shadow-sm/50 shadow-[#ffffff] dark:shadow-sm/50 dark:shadow-white">
         <Link href="/" className="flex items-center me-5" prefetch={false}>
           <Image
             src="/logo/dark-logo-2.png"
@@ -46,6 +48,7 @@ export default async function Navbar() {
           ))}
           <ThemeToggler />
         </nav>
+
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="lg:hidden">

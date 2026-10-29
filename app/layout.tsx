@@ -1,10 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
-import Footer from "@/components/ui/footer";
-import Navbar from "@/components/ui/navbar";
+import { ThemeProvider } from "next-themes";
+import { Inter } from "next/font/google";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+  weight: "100 900",
+});
+const geistMono = localFont({
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Aditya Rizky Febryanto | Personal Portfolio",
@@ -34,52 +46,28 @@ export const metadata: Metadata = {
   },
 };
 
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body
-//         className={`${inter.className} bg-[#00317ad7] dark:bg-gray-950 grid grid-rows-[auto_1fr_auto] min-h-screen  relative`}
-//         style={{
-//           backgroundImage: "url('/assets/svg/circuit-board.svg')",
-//           // backgroundRepeat: "no-repeat",
-//           // backgroundPosition: "bottom",
-//           // backgroundSize: "120%",
-//         }}
-//       >
-//         <Navbar />
-//         {children}
-//         <Footer />
-//       </body>
-//     </html>
-//   );
-// }
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={cn("font-sans", inter.variable)}
+    >
       <body
-        // Ubah grid menjadi flex flex-col
-        className={`${inter.className} bg-[#00317ad7] dark:bg-gray-950 flex flex-col min-h-screen h-full w-fit relative`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[var(--bg-layout)] flex flex-col min-h-screen h-full w-full relative`}
         style={{
           backgroundImage: "url('/assets/svg/circuit-board.svg')",
         }}
       >
-        <Navbar />
-
-        {/* Tambahkan tag main dengan flex-grow */}
-        <main className="flex grow flex-row md:flex-col h-full ">
-          {children}
-        </main>
-
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <main className="flex w-full grow flex-row md:flex-col h-full ">
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
