@@ -13,7 +13,7 @@ const NAV: NavItem[] = [
   { id: "pengalaman", label: "Pengalaman" },
   { id: "skills", label: "Skills" },
   { id: "proyek", label: "Proyek" },
-  { id: "prestasi", label: "Prestasi" },
+  // { id: "prestasi", label: "Prestasi" },
   { id: "kontak", label: "Kontak" },
 ];
 
